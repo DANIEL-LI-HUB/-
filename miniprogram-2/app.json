@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "智能输液管理",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text":"",
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/home-act.png"
+      },
+      {"pagePath": "pages/logs/logs",
+        "text":"",
+        "iconPath": "static/user.png",
+        "selectedIconPath": "static/user-act.png"
+      }
+    ]
+  }
+}

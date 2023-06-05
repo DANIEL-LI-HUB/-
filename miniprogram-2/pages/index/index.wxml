@@ -1,0 +1,108 @@
+<!--index.wxml-->
+<view class="page-container">
+ <view class="header">
+  <view class="header-BeginTime">
+   <view>
+     当前滴速
+   </view>
+   {{Speed}}滴/秒
+
+  </view>
+  <view class="header-EstimatedTime">
+    <view>
+      预估剩余时间
+    </view>
+    {{Time}}
+
+  </view>
+  <view class="header-LiquidSurplus">
+    <view>
+      液体剩余量
+    </view>
+    {{Marg}} ml
+  </view>
+  
+    
+<view>
+  
+</view>
+</view>
+<!-- 数据部分 -->
+<view class="data">
+  <view class="data-card">
+     <image class="data-card_icon" src="/static/温度(2).png" />
+    <view>
+      <view class="data-card_title">
+      温度
+    </view>
+    <view class="data-card_value">
+      {{Temp}}℃
+    </view> 
+  </view>
+  </view>
+
+  <view class="data-card">
+     <image class="data-card_icon" src="/static/Hum.png" />
+    <view>
+      <view class="data-card_title">
+      湿度
+    </view>
+    <view class="data-card_value">
+      {{Hum}}%
+    </view>
+  </view>
+  </view>
+
+
+  <view class="data-card">
+     <image class="data-card_icon" src="/static/输液.png" />
+    <view>
+      <view class="data-card_title">
+      输液类型
+    </view>
+    <view class="data-card_value">
+      <picker bindchange="pickerClick" value='{{pickerIndex}}' range='{{pickerData}}'>{{pickerData[pickerIndex]}}</picker>  
+    </view>
+  </view>
+  </view>
+
+
+  <view class="data-card">
+     <image class="data-card_icon" src="/static/加热.png" />
+    <view>
+      <view class="data-card_title">
+      加热按钮
+    </view>
+    <view class="data-card_value">
+      <switch checked="{{EN_SW}}" bindchange="onLEDChange" color="#3d7ef9"/>
+    </view>  
+  </view>
+  </view>
+ 
+
+  <view class="data-card">
+     <image class="data-card_icon" src="/static/警示(1).png" />
+    <view>
+      <view class="data-card_title">
+      警示按钮
+    </view>
+    <view class="data-card_value">
+      <switch checked="{{Caution_SW}}" bindchange="onCautionChange" color="#3d7ef9"/>
+    </view>  
+  </view>
+  </view>
+
+<!--图像-->
+  <image src="/static/小岛.png" class="i1"></image>
+
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> 
+
+</view>
+</view>
+
+
+    
+
+  

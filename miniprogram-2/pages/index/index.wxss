@@ -1,0 +1,76 @@
+/**index.wxss**/
+.page-container{
+  padding: 36rpx;
+}
+.header{
+  background-color: #3d7ef9;
+  color: #fff;
+  border-radius: 36rpx;
+  padding: 32rpx 64rpx;
+}
+.header .header-BeginTime{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+.header .header-EstimatedTime{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  margin-top: 12rpx;
+}
+.header .header-LiquidSurplus{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  margin-top: 12rpx;
+}
+.data{
+  background-color: rgb(75, 197, 171);
+  border-radius: 36rpx;
+  margin-top: 5rpx;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill,300rpx);
+  grid-gap: 36rpx;
+}
+.data .data-card{
+  background-color: rgb(238, 238, 238);
+  height: 160rpx;
+  box-shadow: #d6d6d6 0 0 8rpx;
+  border-radius: 36rpx;
+  display: flex;
+  justify-content:space-between;
+  padding: 0 16rpx;
+}
+
+.data .data-card .data-card_value{
+  font-size: 52rpx;
+  font-weight: bold;
+}
+.data .data-card .data-card_icon{
+
+  height: 92rpx;
+  width: 92rpx;
+}
+
+/*--图像--*/
+.header .header-pic{
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  margin-top: 16rpx;
+}
+.data .data-pic .data-pic-value{
+  font-size: 1rpx;
+  font-weight: bold;
+}
+.data .data-pic .data-pic_icon{
+  height: 72rpx;
+  width: 72rpx;
+}
+.i1 {
+  margin-top: 5px;
+  width: 110%;
+  height: 200px;
+}
